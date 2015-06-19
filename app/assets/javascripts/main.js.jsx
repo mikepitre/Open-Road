@@ -1,17 +1,20 @@
 /* global Backbone React */
 var App = Backbone.Router.extend({
     routes: {
-        '': 'profile',
-        'edit': 'edit'
+        '': 'login',
+        'signup': 'signup',
+        'addressmap': 'addressmap'
     },
-    profile: function() {
-      React.render(<Profile/>, document.querySelector('#container'));
+    login: function() {
+      React.render(<LogInComponent/>, document.querySelector('#container'));
     },
-    edit: function() {
-      React.render(<Edit/>, document.querySelector('#container'));
-    }
+    addressmap: function() {
+      React.render(<AddressMapComponent/>, document.querySelector('#container'));
+    },
+    signup: function() {
+      React.render(<SignUpComponent/>, document.querySelector('#container'));
+  }
 });
-
 var app = new App();
 Backbone.history.start();
-app.navigate('edit');
+app.navigate('');
