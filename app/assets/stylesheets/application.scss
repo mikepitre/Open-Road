@@ -14,4 +14,46 @@
  *= require_self
  */
 
+body {
+	font-size: 62.5%; 
+	font-family: "fira-sans-2", Trebuchet, sans-serif; ;
+}	
+
+img {
+	max-width: 100%;
+}
+
+.welcome {
+  font-family: "fira-sans-2", Trebuchet, sans-serif;
+  font-style: italic;
+  font-weight: 400;
+  color: white;
+  font-size: 4em;
+  background-color: #9e2613;
+  height: 40px;
+  padding-top: 40px;
+  padding-bottom: 20px;
+  text-align: center;
+}
+
+.signInContainer {
+	background: url(highway_1280adj.jpg);
+	background-size: cover;
+	min-width: 400px;
+	height: 600px;
+}
+
+h1 {
+	// font-style: normal;
+	color: #9e2613;	
+	font-weight: 600;
+	font-size: 6em;
+	height: 200px;
+	text-align: center;
+	padding-top: 200px;
+	background-color: 113 106 105 .5;
+}
+
+
+
 

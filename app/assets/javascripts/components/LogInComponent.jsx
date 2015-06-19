@@ -3,6 +3,15 @@ var LogInComponent = React.createClass({
 		return (
 			<div className="signInContainer">
 			<form onSubmit={this.LogInSubmitted}>
+
+				<div className="welcome">
+				Welcome to
+				</div>
+
+				<img src="highway_1280adj.jpg" className="main_image"/>
+
+				<h1> OpenRoad </h1>
+
 				<input className="emailtext" ref="emailText" type="text" placeholder="Email" />
 				<input className="passwordtext" ref="passwordText" type="text" placeholder="Password" />
 				<button className="btnlogin" type="submit">LOG IN</button>
