@@ -11,17 +11,17 @@ class SessionsController < ApplicationController
       # Specifically, the rails 'session'. This is how we keep the user
       # logged in when they navigate around our website.
       session[:user_id] = user.id
-      render :json { message: 'Successfully logged in!' }
+      render json: { message: 'Successfully logged in!' }
     else
       # If user's login doesn't work, send them back to the login form.
       flash[:alert] = "Username or Email did not match"
-      render :json { message: "Username or Email did not match"}
+      render json: { message: "Username or Email did not match"}
     end
   end
 
   def destroy
     session[:user_id] = nil
-    render :json { message: 'Successfully Logged Out. Goodbye!' }
+    render json: { message: 'Successfully Logged Out. Goodbye!' }
   end
 
 end
