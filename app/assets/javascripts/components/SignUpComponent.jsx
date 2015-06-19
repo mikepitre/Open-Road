@@ -1,17 +1,17 @@
-var LogInComponent = React.createClass({
+var SignUpComponent = React.createClass({
 	render: function() {
 		return (
 			<div className="signInContainer">
-			<form onSubmit={this.LogInSubmitted}>
+			<form onSubmit={this.SignUpSubmitted}>
 				<input className="emailtext" ref="emailText" type="text" placeholder="Email" />
 				<input className="passwordtext" ref="passwordText" type="text" placeholder="Password" />
-				<button className="btnlogin" type="submit">LOG IN</button>
+				<input className="confirmpasswordtext" ref="confirmpasswordText" type="text" placeholder="Confirm Password" />
 				<button className="btnignup" type="submit">SIGN UP</button>
 			</form>
 			</div>
 		);
 	},
-	LogInSubmitted: function(e) {
+	SignUpSubmitted: function(e) {
 		e.preventDefault();
 		var username = this.refs.emailText.getDOMNode().value
 		var password = this.refs.passwordText.getDOMNode().value
