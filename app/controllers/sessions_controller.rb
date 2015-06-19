@@ -24,6 +24,5 @@ class SessionsController < ApplicationController
     render json: { message: 'Successfully Logged Out. Goodbye!' }
   end
 
-end
 
 end
