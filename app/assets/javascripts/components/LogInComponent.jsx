@@ -6,7 +6,7 @@ var LogInComponent = React.createClass({
 				<input className="emailtext" ref="emailText" type="text" placeholder="Email" />
 				<input className="passwordtext" ref="passwordText" type="text" placeholder="Password" />
 				<button className="btnlogin" type="submit">LOG IN</button>
-				<button className="btnignup" type="submit">SIGN UP</button>
+				<button className="btnsignup" type="submit">SIGN UP</button>
 			</form>
 			</div>
 		);
@@ -16,7 +16,7 @@ var LogInComponent = React.createClass({
 		var username = this.refs.emailText.getDOMNode().value
 		var password = this.refs.passwordText.getDOMNode().value
 		if (username.length == 0 ){
-			alert('Enter a email adress')
+			alert('Enter a email address')
 			return
 		}
 		if (password.length == 0 ){
@@ -28,7 +28,7 @@ var LogInComponent = React.createClass({
 		// 	return
 		// }
 		if (username !== ('lbledsoe12@hotmail.com') && password !== ('11693Lpb12')){
-			alert('Username/Pawssword does not exsist')
+			alert('Username/Password does not exsist')
 			return
 		}
 		app.navigate('/addressmap',{trigger:true});
