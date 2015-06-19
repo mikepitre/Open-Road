@@ -17,9 +17,9 @@ var LogInComponent = React.createClass({
 		var p = this.refs.passwordText.getDOMNode().value;
 		console.log(e)
 		console.log(p)
-		$.post(
-		'localhost:3000/login',
-		{email: e, password: p},'JSON');
+		$.post('/login', {email: e, password: p},'JSON').then(function (data) {
+			 console.log(data);
+		});
 		// if (username.length == 0 ){
 		// 	alert('Enter a email address')
 		// 	return
@@ -37,7 +37,7 @@ var LogInComponent = React.createClass({
 		// 	return
 		// }
 		app.navigate('/addressmap',{trigger:true});
-		console.log('success')
+		// console.log('success')
 
 	},
 });
