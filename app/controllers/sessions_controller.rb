@@ -14,14 +14,13 @@ class SessionsController < ApplicationController
       render json: { message: 'Successfully logged in!' }
     else
       # If user's login doesn't work, send them back to the login form.
-      flash[:alert] = "Username or Email did not match"
       render json: { message: "Username or Email did not match"}
     end
   end
 
   def destroy
     session[:user_id] = nil
-    render json: { message: 'Successfully Logged Out. Goodbye!' }
+    render json: { message: 'Successfully Logged Out.' }
   end
 
 
