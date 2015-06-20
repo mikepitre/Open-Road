@@ -4,7 +4,7 @@ var SignUpComponent = React.createClass({
 			<div className="signInContainer">
 			<form onSubmit={this.SignUpSubmitted}>
 				<input className="emailtext" ref="signemailText" type="text" placeholder="Email" />
-				<input className="passwordtext" ref="signpasswordText" type="text" placeholder="Password" />
+				<input className="passwordtext" ref="signpasswordText" type="password" placeholder="Password" />
 				<input className="confirmpasswordtext" ref="confirmpasswordText" type="text" placeholder="Confirm Password" />
 				<input className="PhoneNumber" ref="PhoneNumber" type="text" placeholder="Phone Number" />
 				<button className="btsignup" type="submit">SIGN UP</button>

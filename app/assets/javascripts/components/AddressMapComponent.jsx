@@ -5,7 +5,7 @@
 			<form onSubmit={this.CheckRouteTime}>
 				<input className="CurrentLocation" ref="CurrentLocation" type="text" placeholder="Current Location" />
 				<input className="DesiredLocation" ref="DesiredLocation" type="text" placeholder="Desired Location" />
-				<input className="LatestTime" ref="LatestTime" type="text" placeholder="Most time willing to travel" />
+				<input className="LatestTime" ref="LatestTime" type="text" placeholder="In minuites" />
 				<button className="btnroute" type="submit">ROUTE</button>
 			</form>
 			<div className="googlemap" id="map"></div>
