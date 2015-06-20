@@ -14,7 +14,7 @@ class TripsController < ApplicationController
     @client.messages.create(
     from: "+1512-309-7499",
     to: "(908)3707882",
-    body: params[:body] || 'Travel time has reached your desired travel time...time to go!'
+    body: params[:body] || 'Open Road ahead! Time to go!'
   )
     render json: { message: "sent" }
   end
