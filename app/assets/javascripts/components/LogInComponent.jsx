@@ -17,17 +17,6 @@ var LogInComponent = React.createClass({
 					between you and there </p>
 
 
-				// <form className="form1" onSubmit={this.LogInSubmitted}>
-				
-
-				// 	// <input className="emailtext" ref="emailText" type="text" placeholder="Email" />
-				// 	// <input className="passwordtext" ref="passwordText" type="text" placeholder="Password" />
-				// 	// <button className="btnlogin" type="submit">LOG IN</button>
-				// 	// <button className="btnsignup" type="submit">SIGN UP</button>
-
-				// </form>
-
-
 			<form onSubmit={this.LogInSubmitted}>
 				<input className="emailtext" ref="emailText" type="text" placeholder="Email" />
 				<input className="passwordtext" ref="passwordText" type="text" placeholder="Password" />
@@ -37,16 +26,16 @@ var LogInComponent = React.createClass({
 			</div>
 		</div>
 		);
-	}
-	// LogInSubmitted: function(e) {
-	// 	e.preventDefault();
-	// 	var e = this.refs.emailText.getDOMNode().value;
-	// 	var p = this.refs.passwordText.getDOMNode().value;
-	// 	console.log(e)
-	// 	console.log(p)
-	// 	$.post(
-	// 	'localhost:3000/login',
-	// 	{email: e, password: p},'JSON');
+	},
+	LogInSubmitted: function(e) {
+		e.preventDefault();
+		var e = this.refs.emailText.getDOMNode().value;
+		var p = this.refs.passwordText.getDOMNode().value;
+		console.log(e)
+		console.log(p)
+		$.post(
+		'localhost:3000/login',
+		{email: e, password: p},'JSON');
 	// 	// if (username.length == 0 ){
 	// 	// 	alert('Enter a email address')
 	// 	// 	return
@@ -63,8 +52,8 @@ var LogInComponent = React.createClass({
 	// 	// 	alert('Username/Password does not exsist')
 	// 	// 	return
 	// 	// }
-	// 	app.navigate('/addressmap',{trigger:true});
-	// 	console.log('success')
+		app.navigate('/addressmap',{trigger:true});
+		console.log('success')
 
 	// },
 	},
