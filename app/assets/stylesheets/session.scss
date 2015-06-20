@@ -1,3 +1,151 @@
 // Place all the styles related to the session controller here.
 // They will automatically be included in application.css.
 // You can use Sass (SCSS) here: http://sass-lang.com/
+
+
+/*
+ * This is a manifest file that'll be compiled into application.css, which will include all the files
+ * listed below.
+ *
+ * Any CSS and SCSS file within this directory, lib/assets/stylesheets, vendor/assets/stylesheets,
+ * or any plugin's vendor/assets/stylesheets directory can be referenced here using a relative path.
+ *
+ * You're free to add application-wide styles to this file and they'll appear at the bottom of the
+ * compiled file so the styles you add here take precedence over styles defined in any styles
+ * defined in the other CSS/SCSS files in this directory. It is generally better to create a new
+ * file per style scope.
+ *
+ *= require_tree .
+ *= require_self
+ */
+
+
+
+@mixin grid($num-col) {
+ width: ($num-col*$col-w)+(($num-col - 1)*$gutr-w);
+}
+
+$col-w: 6.725%;
+$gutr-w: 1.754%;
+
+ .col-12 {
+  @include grid(12); 
+}
+
+.col-2 {
+  @include grid(2);  
+}
+
+.col-3 {
+  @include grid(3);  
+}
+
+.col-4 {
+  @include grid(4); 
+}
+
+.col-6 {
+  @include grid(6); 
+}
+
+.col-5 {
+  @include grid(5); 
+}
+
+.col-7 {
+  @include grid(7); 
+}
+
+.col-8 {
+  @include grid(8); 
+}
+
+.col-9 {
+  @include grid(9); 
+}
+
+
+div:last-child {
+  margin-right: 0;
+}
+.emailtext{
+	background-color:red;
+}
+
+
+body {
+	font-size: 62.5%; 
+	font-family: "fira-sans-2", Trebuchet, sans-serif; ;
+}	
+
+img {
+	// max-width: 100%;
+}
+
+.welcome {
+  font-family: "fira-sans-2", Trebuchet, sans-serif;
+  font-style: italic;
+  font-weight: 600;
+  color: white;
+  font-size: 3.9em;
+  background-color: #9a0600;
+  height: 35px;
+  padding-top: 25px;
+  padding-bottom: 25px;
+  text-align: center;
+}
+
+.background-img {
+	background-image: asset-url("highway_1280adjLg.jpg");
+	background-position: -270px 0px;
+  	background-repeat: no-repeat;
+	background-size: cover;
+	height: 700px;
+	width: 120%;
+}
+
+h1 {
+	// font-style: normal;
+	color: #f2ecd4;	
+	font-weight: 600;
+	font-size: 7.8em;
+	text-align: center;
+	padding-top: 35px;
+	padding-right: 75px
+}
+
+.tagline {
+	color: #f2ecd4;	
+	font-weight: 600;
+	font-size: 2.6em;
+	height: 10px;
+	// padding-top: 35px;
+	text-align: right;
+	margin: 10px 23% 0 10%;
+	line-height: 1.5;
+}
+
+// span {
+// 	color: #ec1312;
+
+// }
+
+.form1 {
+	height: 300px;
+	padding-top: 150px;
+}
+
+.formtext {
+	width: 90%;
+	background-color: rgba(116, 27, 0, .7);
+	font-family: "fira-sans-2";
+	font-weight: 600;
+	font-size: 3em;
+	color: #fff;
+	padding: 16px;
+	border: 0;
+	margin-left: 5%;
+	margin-right: 5%;
+	margin-bottom: 10px;
+	text-align: left;
+	}

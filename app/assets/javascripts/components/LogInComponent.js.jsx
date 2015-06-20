@@ -18,8 +18,8 @@ var LogInComponent = React.createClass({
 					between you and there </p>
 
 				<form onSubmit={this.LogInSubmitted}>
-					<input className="emailtext" ref="emailText" type="text" placeholder="Email" />
-					<input className="passwordtext" ref="passwordText" type="password" placeholder="Password" />
+					<input className="emailtext formtext" ref="emailText" type="text" placeholder="Email" />
+					<input className="passwordtext formtext" ref="passwordText" type="password" placeholder="Password" />
 					<button className="btnlogin" type="submit">LOG IN</button>
 					<button onClick={this.SignUp} className="btnsignup" type="button">SIGN UP</button>
 				</form>
