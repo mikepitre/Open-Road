@@ -25,7 +25,7 @@
 				if (duration>LatestTime*60){
 					alert ('Traffic is good to go')
 					$.post('/trips/notify',function(){
-					alert ('text has been sent')
+					// alert ('text has been sent')
 					clearInterval(timer);
           })
 				}
