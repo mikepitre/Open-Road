@@ -34,7 +34,7 @@
 
 		}
 	}
-});	
+});
 function calculateDistances(origin1,destinationA,callback) {
   var service = new google.maps.DistanceMatrixService();
   service.getDistanceMatrix(
