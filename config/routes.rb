@@ -8,6 +8,8 @@ Rails.application.routes.draw do
   post 'login', to: 'sessions#create', as: 'create_session'
   get 'logout', to: 'sessions#destroy', as: 'logout'
 
+  post 'trips/notify', to: 'trips#notify'
+
   root 'application#index'
 end
 
