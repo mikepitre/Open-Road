@@ -12,24 +12,31 @@ var LogInComponent = React.createClass({
 
 			<div className="background-img col-12">
 				
-					<h1> Open<span>Road</span> </h1>
+				<h1> Open<span>Road</span> </h1>
 
-					<p className="tagline"> The shortest time 
-					between you and there </p>
+				<p className="tagline"> The shortest time 
+				between you and there </p>
 
+				<p className="tagline"> </p>
 
+			<div className="form1">
+
+				<h2> log in </h2>
 				<form onSubmit={this.LogInSubmitted}>
-					<input className="emailtext" ref="emailText" type="text" placeholder="Email" />
-					<input className="passwordtext" ref="passwordText" type="text" placeholder="Password" />
+					<input className="emailtext formtext" ref="emailText" type="text" placeholder="Email" />
+					<input className="passwordtext formtext" ref="passwordText" type="text" placeholder="Password" />
 					<button className="btnlogin" type="submit">LOG IN</button>
 					<button onClick={this.SignUp} className="btnsignup" type="button">SIGN UP</button>
 				</form>
+			</div>
+
 			</div>
 		</div>
 		);
 
 	},
 
+// ...........................//
 
 
 	LogInSubmitted: function(e) {
