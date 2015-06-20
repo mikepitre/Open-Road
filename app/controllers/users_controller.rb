@@ -11,7 +11,7 @@ class UsersController < ApplicationController
     if user.save
       render json: { message: 'User created!' }
     else
-      render json: { message: 'Errors Occured.' }
+      render json: { message: 'Errors Occured.' }, status: 418
     end
   end
 

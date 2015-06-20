@@ -14,7 +14,7 @@ class SessionsController < ApplicationController
       render json: { message: 'Successfully logged in!' }
     else
       # If user's login doesn't work, send them back to the login form.
-      render json: { message: "Username or Email did not match"}
+      render json: { message: "Username or Email did not match"}, status: 404
     end
   end
 
