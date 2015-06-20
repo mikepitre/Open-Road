@@ -18,15 +18,16 @@
 		var LatestTime = this.refs.LatestTime.getDOMNode().value
 		setUpMap(CurrentLocation,DesiredLocation);
 		e.preventDefault();
-		setInterval(CheckTime, 10000);
+		 var timer = setInterval(CheckTime, 10000);
 		function CheckTime(){
 			calculateDistances(CurrentLocation, DesiredLocation,function(e){
 				var duration = e.rows[0].elements[0].duration.value
-				if (duration>LatestTime*60){
+				if (duration<LatestTime*60){
 					alert ('Traffic is good to go')
-					$.get('HIS URL',function(){
+					$.post('/trips/notify',function(){
 					alert ('text has been sent')
-					})
+					clearInterval(timer);
+          })
 				}
 			});
 
@@ -65,6 +66,7 @@ function setUpMap(address,endaddress) {
                 position: results[0].geometry.location
             });
             addMarker(endaddress,true);
+            calcRoute(address,endaddress);
         }
     });
 }
@@ -78,10 +80,25 @@ function addMarker(location, isDestination) {
         map: map,
         position: results[0].geometry.location,
       });
-      markersArray.push(marker);
     } else {
       alert('Geocode was not successful for the following reason: '
         + status);
+    }
+  });
+}
+function calcRoute(start,end) {
+  var directionsService = new google.maps.DirectionsService();
+  var directionsDisplay;
+  directionsDisplay = new google.maps.DirectionsRenderer();
+  directionsDisplay.setMap(map);
+  var request = {
+    origin:start,
+    destination:end,
+    travelMode: google.maps.TravelMode.DRIVING
+  };
+  directionsService.route(request, function(result, status) {
+    if (status == google.maps.DirectionsStatus.OK) {
+      directionsDisplay.setDirections(result);
     }
   });
 }
