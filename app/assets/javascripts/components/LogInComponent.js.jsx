@@ -11,10 +11,10 @@ var LogInComponent = React.createClass({
 
 
 			<div className="background-img col-12">
-				
+
 					<h1> Open<span>Road</span> </h1>
 
-					<p className="tagline"> The shortest time 
+					<p className="tagline"> The shortest time
 					between you and there </p>
 
 				<form onSubmit={this.LogInSubmitted}>
@@ -46,13 +46,13 @@ var LogInComponent = React.createClass({
 			 else if  (data.message === 'Username or Email did not match'){
 			 	alert('Username or Email did not match');
 			 	app.navigate('',{trigger:true});
-			 	
+
 			 }
 		console.log('success')
 		console.log(data);
 		});
-		
-		
+
+
 
 	},
 });
