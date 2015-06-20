@@ -12,6 +12,8 @@ gem 'sdoc', '~> 0.4.0', group: :doc
 gem 'bcrypt', '~> 3.1.7'
 gem 'puma'
 gem 'react-rails'
+gem 'twilio-ruby', '~> 4.2.0'
+gem 'figaro'
 
 
 group :development, :test do

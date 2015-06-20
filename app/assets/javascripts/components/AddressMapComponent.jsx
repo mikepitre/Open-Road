@@ -1,4 +1,4 @@
-var AddressMapComponent = React.createClass({
+ var AddressMapComponent = React.createClass({
 	render: function() {
 		return (
 			<div className="mapcontainer">
