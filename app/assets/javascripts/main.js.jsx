@@ -6,7 +6,7 @@ var App = Backbone.Router.extend({
         'addressmap': 'addressmap'
     },
     login: function() {
-      React.render(<LogInComponent/>, document.querySelector('#container'));
+      React.render(<LogInComponent />, document.querySelector('#container'));
     },
     addressmap: function() {
       React.render(<AddressMapComponent/>, document.querySelector('#container'));
