@@ -14,46 +14,115 @@
  *= require_self
  */
 
+
+
+@mixin grid($num-col) {
+ width: ($num-col*$col-w)+(($num-col - 1)*$gutr-w);
+}
+
+$col-w: 6.725%;
+$gutr-w: 1.754%;
+
+ .col-12 {
+  @include grid(12); 
+}
+
+.col-2 {
+  @include grid(2);  
+}
+
+.col-3 {
+  @include grid(3);  
+}
+
+.col-4 {
+  @include grid(4); 
+}
+
+.col-6 {
+  @include grid(6); 
+}
+
+.col-5 {
+  @include grid(5); 
+}
+
+.col-7 {
+  @include grid(7); 
+}
+
+.col-8 {
+  @include grid(8); 
+}
+
+.col-9 {
+  @include grid(9); 
+}
+
+
+div:last-child {
+  margin-right: 0;
+}
+
+
 body {
 	font-size: 62.5%; 
 	font-family: "fira-sans-2", Trebuchet, sans-serif; ;
 }	
 
 img {
-	max-width: 100%;
+	// max-width: 100%;
 }
 
 .welcome {
   font-family: "fira-sans-2", Trebuchet, sans-serif;
-  font-style: italic;
-  font-weight: 400;
-  color: white;
-  font-size: 4em;
-  background-color: #9e2613;
-  height: 40px;
-  padding-top: 40px;
-  padding-bottom: 20px;
+  // font-style: italic;
+  font-weight: 300;
+  color: black;
+  font-size: 3.9em;
+  background-color: #ce982b;
+  height: 35px;
+  padding-top: 25px;
+  padding-bottom: 25px;
   text-align: center;
 }
 
-.signInContainer {
-	background: url(highway_1280adj.jpg);
+.background-img {
+	background: url(highway_1280adjLg.jpg);
+	background-position: -270px 0px;
+  	background-repeat: no-repeat;
 	background-size: cover;
-	min-width: 400px;
-	height: 600px;
+	height: 700px;
+	width: 120%;
 }
 
 h1 {
 	// font-style: normal;
-	color: #9e2613;	
+	color: #f2ecd4;	
 	font-weight: 600;
-	font-size: 6em;
-	height: 200px;
+	font-size: 7.8em;
 	text-align: center;
-	padding-top: 200px;
-	background-color: 113 106 105 .5;
+	padding-top: 35px;
+	padding-right: 75px
 }
 
+.tagline {
+	color: #f2ecd4;	
+	font-weight: 600;
+	font-size: 2.6em;
+	height: 10px;
+	// padding-top: 35px;
+	text-align: right;
+	margin: 10px 23% 0 10%;
+	line-height: 1.5;
+}
 
+span {
+	color: #ec1312;
 
+}
 
+.form1 {
+	margin-top: 200px;
+
+}

@@ -1,5 +1,4 @@
 class UsersController < ApplicationController
-  before_action :set_user, only: [:show, :edit, :update, :destroy]
 
 
   def new
@@ -7,7 +6,8 @@ class UsersController < ApplicationController
   end
 
   def create
-    user = User.new(user_params)
+    # user = User.new(user_params)
+    user = User.new(email: params[:email], phone: params[:phone], password: params[:password], password_confirmation: params[:password_confirmation] )
     if user.save
       render json: { message: 'User created!' }
     else
