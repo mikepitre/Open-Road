@@ -3,37 +3,51 @@ var SignUpComponent = React.createClass({
 		return (
 			<div className="signInContainer">
 			<form onSubmit={this.SignUpSubmitted}>
-				<input className="emailtext" ref="emailText" type="text" placeholder="Email" />
-				<input className="passwordtext" ref="passwordText" type="text" placeholder="Password" />
+				<input className="emailtext" ref="signemailText" type="text" placeholder="Email" />
+				<input className="passwordtext" ref="signpasswordText" type="text" placeholder="Password" />
 				<input className="confirmpasswordtext" ref="confirmpasswordText" type="text" placeholder="Confirm Password" />
-				<button className="btnignup" type="submit">SIGN UP</button>
+				<input className="PhoneNumber" ref="PhoneNumber" type="text" placeholder="Phone Number" />
+				<button className="btsignup" type="submit">SIGN UP</button>
 			</form>
 			</div>
 		);
 	},
 	SignUpSubmitted: function(e) {
 		e.preventDefault();
-		var username = this.refs.emailText.getDOMNode().value
-		var password = this.refs.passwordText.getDOMNode().value
-		if (username.length == 0 ){
-			alert('Enter a email adress')
-			return
-		}
-		if (password.length == 0 ){
-			alert('Enter a password')
-			return
-		}
-		// if (!validator.isEmail(username)){
-		// 	alert('Enter a valid email adress')
-		// 	return
-		// }
-		if (username !== ('lbledsoe12@hotmail.com') && password !== ('11693Lpb12')){
-			alert('Username/Pawssword does not exsist')
-			return
-		}
-		app.navigate('/addressmap',{trigger:true});
-		console.log('success')
+		var email = this.refs.signemailText.getDOMNode().value;
+		var password = this.refs.signpasswordText.getDOMNode().value;
+		var confirmpassword = this.refs.confirmpasswordText.getDOMNode().value;
+		var phonenumber = this.refs.PhoneNumber.getDOMNode().value;
+		console.log(email)
+		console.log(password)
+		console.log(confirmpassword)
+		console.log(phonenumber)
 
-	}
+		$.post('/users', {email: email, password: password, 'password confirmation': confirmpassword, phone: phonenumber},'JSON').then(function (data) {
+			 console.log(data);
+			 app.navigate('',{trigger:true});
+		});
+	// 	var username = this.refs.signemailText.getDOMNode().value
+	// 	var password = this.refs.signpasswordText.getDOMNode().value
+	// 	if (username.length == 0 ){
+	// 		alert('Enter a email adress')
+	// 		return
+	// 	}
+	// 	if (password.length == 0 ){
+	// 		alert('Enter a password')
+	// 		return
+	// 	}
+	// 	// if (!validator.isEmail(username)){
+	// 	// 	alert('Enter a valid email adress')
+	// 	// 	return
+	// 	// }
+	// 	if (username !== ('lbledsoe12@hotmail.com') && password !== ('11693Lpb12')){
+	// 		alert('Username/Pawssword does not exsist')
+	// 		return
+	// 	}
+	// 	app.navigate('/signup',{trigger:true});
+	// 	console.log('success')
+
+	 }
 		
 });

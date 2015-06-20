@@ -6,10 +6,14 @@ var LogInComponent = React.createClass({
 				<input className="emailtext" ref="emailText" type="text" placeholder="Email" />
 				<input className="passwordtext" ref="passwordText" type="text" placeholder="Password" />
 				<button className="btnlogin" type="submit">LOG IN</button>
-				<button className="btnsignup" type="submit">SIGN UP</button>
+				<button onClick={this.SignUp} className="btnsignup" type="button">SIGN UP</button>
 			</form>
 			</div>
 		);
+	},
+	SignUp:function(){
+		app.navigate('/signup',{trigger:true});
+
 	},
 	LogInSubmitted: function(e) {
 		e.preventDefault();

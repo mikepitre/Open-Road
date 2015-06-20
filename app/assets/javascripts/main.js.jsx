@@ -17,4 +17,8 @@ var App = Backbone.Router.extend({
 });
 var app = new App();
 Backbone.history.start();
+<<<<<<< Updated upstream
 app.navigate('');
+=======
+// app.navigate('');
+>>>>>>> Stashed changes
