@@ -24,39 +24,39 @@ $col-w: 6.725%;
 $gutr-w: 1.754%;
 
  .col-12 {
-  @include grid(12); 
+  @include grid(12);
 }
 
 .col-2 {
-  @include grid(2);  
+  @include grid(2);
 }
 
 .col-3 {
-  @include grid(3);  
+  @include grid(3);
 }
 
 .col-4 {
-  @include grid(4); 
+  @include grid(4);
 }
 
 .col-6 {
-  @include grid(6); 
+  @include grid(6);
 }
 
 .col-5 {
-  @include grid(5); 
+  @include grid(5);
 }
 
 .col-7 {
-  @include grid(7); 
+  @include grid(7);
 }
 
 .col-8 {
-  @include grid(8); 
+  @include grid(8);
 }
 
 .col-9 {
-  @include grid(9); 
+  @include grid(9);
 }
 
 
@@ -66,9 +66,9 @@ div:last-child {
 
 
 body {
-	font-size: 62.5%; 
+	font-size: 62.5%;
 	font-family: "fira-sans-2", Trebuchet, sans-serif; ;
-}	
+}
 
 img {
 	// max-width: 100%;
@@ -98,7 +98,7 @@ p {
 
 h1 {
 	// font-style: normal;
-	color: #f2ecd4;	
+	color: #f2ecd4;
 	font-weight: 600;
 	font-size: 7.8em;
 	text-align: center;
@@ -107,7 +107,7 @@ h1 {
 }
 
 .tagline {
-	color: #f2ecd4;	
+	color: #f2ecd4;
 	font-weight: 600;
 	font-size: 2.6em;
 	height: 10px;
