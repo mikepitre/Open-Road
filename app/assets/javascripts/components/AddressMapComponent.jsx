@@ -23,9 +23,8 @@
 			calculateDistances(CurrentLocation, DesiredLocation,function(e){
 				var duration = e.rows[0].elements[0].duration.value
 				if (duration>LatestTime*60){
-					alert ('Traffic is good to go')
 					$.post('/trips/notify',function(){
-					// alert ('text has been sent')
+					 alert ('Text has been sent, Traffic is good to go!!')
 					clearInterval(timer);
           })
 				}
