@@ -5,7 +5,7 @@
 			<form onSubmit={this.CheckRouteTime}>
 				<input className="CurrentLocation" ref="CurrentLocation" type="text" placeholder="Current Location" />
 				<input className="DesiredLocation" ref="DesiredLocation" type="text" placeholder="Desired Location" />
-				<input className="LatestTime" ref="LatestTime" type="text" placeholder="Latest time to leave" />
+				<input className="LatestTime" ref="LatestTime" type="text" placeholder="Most time willing to travel" />
 				<button className="btnroute" type="submit">ROUTE</button>
 			</form>
 			<div className="googlemap" id="map"></div>
@@ -24,7 +24,6 @@
 				var duration = e.rows[0].elements[0].duration.value
 				if (duration>LatestTime*60){
 					$.post('/trips/notify',function(){
-					 alert ('Text has been sent, Traffic is good to go!!')
 					clearInterval(timer);
           })
 				}
