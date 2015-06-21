@@ -14,168 +14,233 @@
  *= require_self
  */
 
-
-
-@mixin grid($num-col) {
- width: ($num-col*$col-w)+(($num-col - 1)*$gutr-w);
+.main {
+	width: 80%;
+	margin: 0 auto;
 }
 
-$col-w: 6.725%;
-$gutr-w: 1.754%;
+// @mixin grid($num-col) {
+//  width: ($num-col*$col-w)+(($num-col - 1)*$gutr-w);
+// }
 
- .col-12 {
-  @include grid(12); 
-}
+// $col-w: 6.725%;
+// $gutr-w: 1.754%;
 
-.col-2 {
-  @include grid(2);  
-}
+// .box {
+//   // vertical-align: middle;
+//   // box-sizing: border-box;
+//   // height: 30px;
+//   // background-color: darkgray; 
+//   // margin-right: $gutr-w;
+//   // float: left;
+//   // border-radius: 5px;
+//   // text-align: center;
+//   // color: white;
+//   // margin-bottom: 10px;
+// }
 
-.col-3 {
-  @include grid(3);  
-}
+//  .col-12 {
+//   @include grid(12);
+// }
 
-.col-4 {
-  @include grid(4); 
-}
+// .col-2 {
+//   @include grid(2);
+//   padding-bottom: 5px;
+//   background-color: red;  
+// }
 
-.col-6 {
-  @include grid(6); 
-}
+// .col-3 {
+//   @include grid(3);  
+// }
 
-.col-5 {
-  @include grid(5); 
-}
+// .col-4 {
+//   @include grid(4); 
+// }
 
-.col-7 {
-  @include grid(7); 
-}
+// .col-6 {
+//   @include grid(6); 
+// }
 
-.col-8 {
-  @include grid(8); 
-}
+// .col-5 {
+//   @include grid(5); 
+// }
 
-.col-9 {
-  @include grid(9); 
-}
+// .col-7 {
+//   @include grid(7); 
+// }
 
+// .col-8 {
+//   @include grid(8); 
+//   padding-bottom: 5px; 
+//   background-color: purple;
+//   margin: 0 auto;
+// }
 
-div:last-child {
-  margin-right: 0;
-}
+// .col-9 {
+//   @include grid(9); 
+// }
+
+// .col-10 {
+//   @include grid(10); 
+//   border: 1px dashed red;
+// }
+
+// div:last-child {
+//   margin-right: 0;
+// }
 .emailtext{
 	background-color:red;
 }
 
-
 body {
 	font-size: 62.5%; 
-	font-family: "fira-sans-2", Trebuchet, sans-serif; ;
+	font-family: "fira-sans-2", Trebuchet, sans-serif; 
+	background-color: #2b2323;
+
 }	
 
 img {
 	// max-width: 100%;
 }
 
+
 .welcome {
   font-family: "fira-sans-2", Trebuchet, sans-serif;
   font-style: italic;
-  font-weight: 600;
+  font-weight: 400;
   color: white;
-  font-size: 3.9em;
+  font-size: 4.5em;
   background-color: #9a0600;
   height: 35px;
   padding-top: 25px;
   padding-bottom: 25px;
   text-align: center;
+  width: 100%;
+
 }
 
 .background-img {
 	background-image: asset-url("highway_1280adjLg.jpg");
-	background-position: -270px 0px;
+	background-position: center;
   	background-repeat: no-repeat;
 	background-size: cover;
 	height: 700px;
-	width: 120%;
+	// width: 140%;
 }
 
 h1 {
 	// font-style: normal;
-	color: #fefbe6;	
+	color: #feedaf;	
 	font-weight: 600;
-	font-size: 7.8em;
+	font-size: 6.5em;
 	text-align: center;
 	padding-top: 35px;
-	padding-right: 75px
-}
+	// padding-right: 15%;
 
+}
 .tagline {
-	color: #f2ecd4;	
+	color: #faeec4;	
 	font-weight: 600;
 	font-size: 2.6em;
 	height: 10px;
-	// padding-top: 35px;
+	padding-top: 35px;
 	text-align: right;
-	margin: 10px 23% 0 10%;
 	line-height: 1.5;
-	padding-bottom: 180px;
+	padding-bottom: 100px;
+	margin-right: 5%;
 	font-style: italic;
 }
+
+
+.fullwidth {
+	width: 100%;
+	float: right;
+	display: block;
+}
+
+
 
 // span {
 // 	color: #ec1312;
 
 // }
 
-.form1 {
-	height: 300px;
-	padding-top: 60px;
-}
+// display: flex;
+// justify-content: center;
+// align-items: center;
 
-.formtext {
-	width: 90%;
-	background-color: rgba(83, 75, 70, .8);
-	// rgba(116, 27, 0, .8);
+.formtext {	
+	display: block;
 	font-family: "fira-sans-2";
 	font-weight: 600;
 	font-size: 2.6em;
-	color: #fff;
+	text-align: left;
+	// width: 60%;
+	background-color: rgba(83, 75, 70, .7);
 	padding-top: 10px;
 	padding-bottom: 10px;
-	padding-left: 15px;
+	padding-left: 20px;
 	border: 0;
-	margin-left: 5%;
-	margin-right: 5%;
+	// margin-left: 20%;
+	// margin-right: 20%;
 	margin-bottom: 10px;
-	text-align: left;
-	}
+	// float: right;
+	color: white;
+	width:335px;
+	// margin-left: 20px;	
 
-.login_rnd_btn {
-	margin-top: 20px;
-	border-radius: 35px;
+}
+.btnlogin {
+	display: block;
+	margin-top: 10px;
+	border-radius: 30px;
 	border: 1px solid #fefbe6;
 	background-color: rgba(116, 27, 0, 1);
 	font-weight: 600;
-	width: 70px;
-	height: 70px;
+	width: 60px;
+	height: 60px;
 	font-family: "fira-sans-2";
-	font-size: 1.6em;
+	font-size: 1.7em;
 	color: #fefbe6;
-	margin-left: 45%;
-	margin-right: 45%;
+	// margin:
+	// margin-left: 20%;
+	// margin-right: 45%;
+	line-height: 1.1;
+	padding-top: 7px;
+	float: right;
 }
 
+.position_rt {
+	float: right;
+}
 
 .not_member {
 	color: #f2ecd4;	
 	font-weight: 600;
-	font-size: 2.6em;
-	height: 10px;
+	font-size: 2.4em;
+	height: 35px;
+	// background-color: rgba(83, 75, 70, .8);
 	// padding-top: 35px;
-	text-align: center;
-	margin: 10px 23% 0 10%;
+	// margin: 40px 23% 0 5%;
+	padding-left: 10px;
 	line-height: 1.5;
-	padding-bottom: 180px;
 	font-style: italic;
-
+	text-align: left;
+	// margin-bottom: 10px;
+	float: right;
+	// clear: all;
+	margin-top: 20px;
 }
+
+// .formgroup {
+// 	width:100%;
+// 	margin-left: 15%;
+// 	margin-right: 15%;
+// }
+
+
+
+
+
+
+
