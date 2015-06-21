@@ -14,115 +14,246 @@
  *= require_self
  */
 
-
-
-@mixin grid($num-col) {
- width: ($num-col*$col-w)+(($num-col - 1)*$gutr-w);
+.main {
+	width: 80%;
+	margin: 0 auto;
 }
 
-$col-w: 6.725%;
-$gutr-w: 1.754%;
+// @mixin grid($num-col) {
+//  width: ($num-col*$col-w)+(($num-col - 1)*$gutr-w);
+// }
 
- .col-12 {
-  @include grid(12); 
+// $col-w: 6.725%;
+// $gutr-w: 1.754%;
+
+// .box {
+//   // vertical-align: middle;
+//   // box-sizing: border-box;
+//   // height: 30px;
+//   // background-color: darkgray; 
+//   // margin-right: $gutr-w;
+//   // float: left;
+//   // border-radius: 5px;
+//   // text-align: center;
+//   // color: white;
+//   // margin-bottom: 10px;
+// }
+
+//  .col-12 {
+//   @include grid(12);
+// }
+
+// .col-2 {
+//   @include grid(2);
+//   padding-bottom: 5px;
+//   background-color: red;  
+// }
+
+// .col-3 {
+//   @include grid(3);  
+// }
+
+// .col-4 {
+//   @include grid(4); 
+// }
+
+// .col-6 {
+//   @include grid(6); 
+// }
+
+// .col-5 {
+//   @include grid(5); 
+// }
+
+// .col-7 {
+//   @include grid(7); 
+// }
+
+// .col-8 {
+//   @include grid(8); 
+//   padding-bottom: 5px; 
+//   background-color: purple;
+//   margin: 0 auto;
+// }
+
+// .col-9 {
+//   @include grid(9); 
+// }
+
+// .col-10 {
+//   @include grid(10); 
+//   border: 1px dashed red;
+// }
+
+// div:last-child {
+//   margin-right: 0;
+// }
+.emailtext{
+	background-color:red;
 }
-
-.col-2 {
-  @include grid(2);  
-}
-
-.col-3 {
-  @include grid(3);  
-}
-
-.col-4 {
-  @include grid(4); 
-}
-
-.col-6 {
-  @include grid(6); 
-}
-
-.col-5 {
-  @include grid(5); 
-}
-
-.col-7 {
-  @include grid(7); 
-}
-
-.col-8 {
-  @include grid(8); 
-}
-
-.col-9 {
-  @include grid(9); 
-}
-
-
-div:last-child {
-  margin-right: 0;
-}
-
 
 body {
 	font-size: 62.5%; 
-	font-family: "fira-sans-2", Trebuchet, sans-serif; ;
+	font-family: "fira-sans-2", Trebuchet, sans-serif; 
+	background-color: #9a0600;
 }	
+
 
 img {
 	// max-width: 100%;
 }
 
-p {
+.welcome {
   font-family: "fira-sans-2", Trebuchet, sans-serif;
   font-style: italic;
-  font-weight: 300;
-  color: black;
-  font-size: 3.9em;
-  background-color: #ce982b;
+  font-weight: 400;
+  color: white;
+  font-size: 4.5em;
+  background-color: #9a0600;
   height: 35px;
   padding-top: 25px;
   padding-bottom: 25px;
   text-align: center;
-}
+  width: 100%;
 
+}
 .background-img {
-	background: url(highway_1280adjLg.jpg);
-	background-position: -270px 0px;
+	background-image: asset-url("highway_1280adjLg.jpg");
+	background-position: center;
   	background-repeat: no-repeat;
 	background-size: cover;
 	height: 700px;
-	width: 120%;
 }
 
 h1 {
-	// font-style: normal;
-	color: #f2ecd4;	
+	color: #feedaf;	
 	font-weight: 600;
-	font-size: 7.8em;
+	font-size: 6.2em;
 	text-align: center;
 	padding-top: 35px;
-	padding-right: 75px
+
+.addl_top_mrgn {
+	margin-top: 200px;
 }
 
+}
 .tagline {
-	color: #f2ecd4;	
+	color: #faeec4;	
 	font-weight: 600;
 	font-size: 2.6em;
 	height: 10px;
-	// padding-top: 35px;
+	padding-top: 35px;
 	text-align: right;
-	margin: 10px 23% 0 10%;
 	line-height: 1.5;
+	padding-bottom: 100px;
+	margin-right: 5%;
+	font-style: italic;
 }
 
-span {
-	color: #ec1312;
-
+.fullwidth {
+	width: 100%;
+	float: right;
+	display: block;
 }
 
-.form1 {
-	margin-top: 200px;
 
+.formtext {	
+	display: block;
+	font-family: "fira-sans-2";
+	font-weight: 600;
+	font-size: 2.6em;
+	text-align: left;
+	background-color: rgba(83, 75, 70, .7);
+	padding-top: 10px;
+	padding-bottom: 10px;
+	padding-left: 20px;
+	border: 0;
+	margin-bottom: 10px;
+	color: white;
+	width: 300px;
+	margin-left: 40px;	
 }
+
+
+.formtext_map {	
+	display: block;
+	font-family: "fira-sans-2";
+	font-weight: 600;
+	font-size: 2.6em;
+	text-align: left;
+	background-color: rgba(83, 75, 70, .7);
+	padding-top: 10px;
+	padding-bottom: 10px;
+	padding-left: 20px;
+	border: 0;
+	margin-bottom: 10px;
+	color: white;
+	width: 300px;
+	margin-left: 100px;	
+}
+
+.btn {
+	display: block;
+	margin-top: 10px;
+	border-radius: 30px;
+	border: 1px solid #fefbe6;
+	background-color: rgba(116, 27, 0, 1);
+	font-weight: 600;
+	width: 60px;
+	height: 60px;
+	font-family: "fira-sans-2";
+	font-size: 1.6em;
+	color: #fefbe6;
+	line-height: 1.1;
+	padding-top: 7px;
+	float: right;
+}
+
+.position_rt1 {
+	float: right;
+}
+
+.position_rt2 {
+	float: right;
+	padding-top: 145px;
+}
+
+.position_3 {
+	float: right;
+	padding-top: 35px;
+}
+
+
+.not_member {
+	color: #f2ecd4;	
+	font-weight: 600;
+	font-size: 2.4em;
+	height: 35px;
+	padding-left: 10px;
+	line-height: 1.5;
+	font-style: italic;
+	text-align: left;
+	float: right;
+	margin-top: 20px;
+}
+
+.googlemap {
+	width: 60%;
+	margin-top: 100px;
+	margin: 0 auto;
+	height: 30%;
+}
+
+
+// .formgroup {
+// 	width:100%;
+// 	margin-left: 15%;
+// 	margin-right: 15%;
+// }
+
+
+
+
+
+
+

@@ -1,30 +1,54 @@
 var LogInComponent = React.createClass({
 	render: function() {
 		return (
-		<div className="signInContainer">
+	<div className="background-img">
 
-			<div className="col-12">
+	<p className="welcome"> Welcome to </p>
 
-					<p className="welcome"> Welcome to </p>
+		<div className="main">
 
-			</div>
-		
+				<h1> Open Road </h1>
 
-			<div className="background-img col-12">
-
-					<h1> Open<span>Road</span> </h1>
-
-					<p className="tagline"> The shortest time
+				<p className="tagline"> The shortest time
 					between you and there </p>
 
-				<form onSubmit={this.LogInSubmitted}>
-					<input className="emailtext" ref="emailText" type="text" placeholder="Email" />
-					<input className="passwordtext" ref="passwordText" type="password" placeholder="Password" />
-					<button className="btnlogin" type="submit">LOG IN</button>
-					<button onClick={this.SignUp} className="btnsignup" type="button">SIGN UP</button>
-				</form>
+			<div className="position_rt1">
+
+				<form className="formgroup" onSubmit={this.LogInSubmitted}>
+
+					<input className="emailtext formtext" ref="emailText" type="text" placeholder="Email" />
+					<input className="passwordtext formtext" ref="passwordText" type="password" placeholder="Password" />
+
+		
+
+			<div className="fullwidth">
+
+					<button className="btnlogin btn" type="submit">LOG IN </button>
 			</div>
+
+		
+
+
+					<div className="float-rt"> 
+
+
+						<div className="fullwidth">
+						<p className="not_member"> Not a member? </p>
+						</div>
+
+						<div className="fullwidth">
+						<button onClick={this.SignUp} className="btnsignup btn" type="button">SIGN UP</button>
+
+						</div>
+
+					</div>
+					</form>
+			</div>
+
 		</div>
+			
+	</div>
+
 		);
 
 	},

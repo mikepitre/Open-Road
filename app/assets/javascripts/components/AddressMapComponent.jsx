@@ -1,15 +1,61 @@
+ // var AddressMapComponent = React.createClass({
+	// render: function() {
+	// 	return (
+	// 		<div className="mapcontainer">
+	// 		<form onSubmit={this.CheckRouteTime}>
+	// 			<input className="CurrentLocation" ref="CurrentLocation" type="text" placeholder="Current Location" />
+	// 			<input className="DesiredLocation" ref="DesiredLocation" type="text" placeholder="Destination" />
+	// 			<input className="LatestTime" ref="LatestTime" type="text" placeholder="In minutes" />
+	// 			<button className="btnroute" type="submit">ROUTE</button>
+	// 		</form>
+	// 		<div className="googlemap" id="map"></div>
+	// 		</div>
+
+
+// ....................................
+
+
  var AddressMapComponent = React.createClass({
-	render: function() {
-		return (
-			<div className="mapcontainer">
-			<form onSubmit={this.CheckRouteTime}>
-				<input className="CurrentLocation" ref="CurrentLocation" type="text" placeholder="Current Location" />
-				<input className="DesiredLocation" ref="DesiredLocation" type="text" placeholder="Destination" />
-				<input className="LatestTime" ref="LatestTime" type="text" placeholder="In minutes" />
-				<button className="btnroute" type="submit">ROUTE</button>
-			</form>
-			<div className="googlemap" id="map"></div>
-			</div>
+  render: function() {
+    return (
+
+<div className="background-img">
+
+    <p className="welcome"> Your trip info </p>
+
+      <div className="main">
+
+              <div className="signInContainer">
+
+                    <div className="mapcontainer">
+
+                         <form onSubmit={this.CheckRouteTime}>
+
+                              <div className="position_3">
+                                  <input className="CurrentLocation formtext_map" ref="CurrentLocation" type="text" placeholder="Current location" />
+                                  <input className="DesiredLocation formtext_map" ref="DesiredLocation" type="text" placeholder="Destination" />
+                                  <input className="LatestTime formtext_map" ref="LatestTime" type="text" placeholder="Travel time in minutes" />
+                                  <button className="btnroute btn" type="submit">ROUTE</button>
+                              </div>
+
+                         </form>
+
+                    </div>
+
+               </div>
+
+        </div>
+
+
+
+       <div className="googlemap" id="map"></div>
+      
+
+ </div>      
+
+
+// ....................................
+
 		);
 	},
 	 CheckRouteTime: function(e) {
