@@ -35,7 +35,7 @@
                                   <input className="CurrentLocation formtext_map" ref="CurrentLocation" type="text" placeholder="Current location" />
                                   <input className="DesiredLocation formtext_map" ref="DesiredLocation" type="text" placeholder="Destination" />
                                   <input className="LatestTime formtext_map" ref="LatestTime" type="text" placeholder="Travel time in minutes" />
-                                  <button className="btnroute btn" type="submit">ROUTE</button>
+                                  <button className="btnroute btn1" type="submit">ROUTE</button>
                               </div>
 
                          </form>
@@ -49,9 +49,9 @@
 
 
        <div className="googlemap" id="map"></div>
-      
 
- </div>      
+
+ </div>
 
 
 // ....................................
@@ -69,7 +69,7 @@
 			calculateDistances(CurrentLocation, DesiredLocation,function(e){
 				var duration = e.rows[0].elements[0].duration.value
 				if (duration>LatestTime*60){
-          
+
 					$.post('/trips/notify',function(){
             alert('Time to go!')
 					clearInterval(timer);

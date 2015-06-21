@@ -30,7 +30,7 @@
 //   // vertical-align: middle;
 //   // box-sizing: border-box;
 //   // height: 30px;
-//   // background-color: darkgray; 
+//   // background-color: darkgray;
 //   // margin-right: $gutr-w;
 //   // float: left;
 //   // border-radius: 5px;
@@ -46,42 +46,42 @@
 // .col-2 {
 //   @include grid(2);
 //   padding-bottom: 5px;
-//   background-color: red;  
+//   background-color: red;
 // }
 
 // .col-3 {
-//   @include grid(3);  
+//   @include grid(3);
 // }
 
 // .col-4 {
-//   @include grid(4); 
+//   @include grid(4);
 // }
 
 // .col-6 {
-//   @include grid(6); 
+//   @include grid(6);
 // }
 
 // .col-5 {
-//   @include grid(5); 
+//   @include grid(5);
 // }
 
 // .col-7 {
-//   @include grid(7); 
+//   @include grid(7);
 // }
 
 // .col-8 {
-//   @include grid(8); 
-//   padding-bottom: 5px; 
+//   @include grid(8);
+//   padding-bottom: 5px;
 //   background-color: purple;
 //   margin: 0 auto;
 // }
 
 // .col-9 {
-//   @include grid(9); 
+//   @include grid(9);
 // }
 
 // .col-10 {
-//   @include grid(10); 
+//   @include grid(10);
 //   border: 1px dashed red;
 // }
 
@@ -93,10 +93,10 @@
 }
 
 body {
-	font-size: 62.5%; 
-	font-family: "fira-sans-2", Trebuchet, sans-serif; 
+	font-size: 62.5%;
+	font-family: "fira-sans-2", Trebuchet, sans-serif;
 	background-color: #9a0600;
-}	
+}
 
 
 img {
@@ -126,7 +126,7 @@ img {
 }
 
 h1 {
-	color: #feedaf;	
+	color: #feedaf;
 	font-weight: 600;
 	font-size: 6.2em;
 	text-align: center;
@@ -138,7 +138,7 @@ h1 {
 
 }
 .tagline {
-	color: #faeec4;	
+	color: #faeec4;
 	font-weight: 600;
 	font-size: 2.6em;
 	height: 10px;
@@ -157,7 +157,7 @@ h1 {
 }
 
 
-.formtext {	
+.formtext {
 	display: block;
 	font-family: "fira-sans-2";
 	font-weight: 600;
@@ -171,11 +171,11 @@ h1 {
 	margin-bottom: 10px;
 	color: white;
 	width: 300px;
-	margin-left: 40px;	
+	margin-left: 40px;
 }
 
 
-.formtext_map {	
+.formtext_map {
 	display: block;
 	font-family: "fira-sans-2";
 	font-weight: 600;
@@ -189,7 +189,7 @@ h1 {
 	margin-bottom: 10px;
 	color: white;
 	width: 300px;
-	margin-left: 100px;	
+	margin-left: 100px;
 }
 
 .btn {
@@ -209,6 +209,24 @@ h1 {
 	float: right;
 }
 
+.btn1 {
+	display: block;
+	margin-top: 10px;
+	border-radius: 30px;
+	border: 1px solid #fefbe6;
+	background-color: rgba(116, 27, 0, 1);
+	font-weight: 600;
+	width: 60px;
+	height: 60px;
+	font-family: "fira-sans-2";
+	font-size: 1.6em;
+	color: #fefbe6;
+	line-height: 1.1;
+	padding-top: 7px;
+	float: right;
+	margin-bottom: 20px;
+}
+
 .position_rt1 {
 	float: right;
 }
@@ -225,7 +243,7 @@ h1 {
 
 
 .not_member {
-	color: #f2ecd4;	
+	color: #f2ecd4;
 	font-weight: 600;
 	font-size: 2.4em;
 	height: 35px;
