@@ -8,7 +8,7 @@ var LogInComponent = React.createClass({
 					<p className="welcome"> Welcome to </p>
 
 			</div>
-
+		
 
 			<div className="background-img col-12">
 
