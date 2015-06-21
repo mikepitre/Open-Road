@@ -18,11 +18,11 @@ var SignUpComponent = React.createClass({
 
 					<input className="emailtext formtext" ref="signemailText" type="text" placeholder="Email" />
 					<input className="passwordtext formtext" ref="signpasswordText" type="password" placeholder="Password" />
-					<input className="confirmpasswordtext formtext" ref="confirmpasswordText" type="text" placeholder="Confirm Password" />
+					<input className="confirmpasswordtext formtext" ref="confirmpasswordText" type="password" placeholder="Confirm Password" />
 					<input className="PhoneNumber formtext" ref="PhoneNumber" type="text" placeholder="Phone Number" />
 					<button className="btsignup btn" type="submit">SIGN UP</button>
 
-				</div>	
+				</div>
 
 
 			</form>
@@ -71,5 +71,5 @@ var SignUpComponent = React.createClass({
 	// 	console.log('success')
 
 	 }
-		
+
 });
