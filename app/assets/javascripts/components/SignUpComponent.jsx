@@ -1,15 +1,37 @@
 var SignUpComponent = React.createClass({
 	render: function() {
 		return (
+
+<div className="background-img">
+
+	<p className="welcome"> Sign up </p>
+
+		<div className="main">
+
+			<h1> Open Road </h1>
+
 			<div className="signInContainer">
+
 			<form onSubmit={this.SignUpSubmitted}>
-				<input className="emailtext" ref="signemailText" type="text" placeholder="Email" />
-				<input className="passwordtext" ref="signpasswordText" type="password" placeholder="Password" />
-				<input className="confirmpasswordtext" ref="confirmpasswordText" type="text" placeholder="Confirm Password" />
-				<input className="PhoneNumber" ref="PhoneNumber" type="text" placeholder="Phone Number" />
-				<button className="btsignup" type="submit">SIGN UP</button>
+
+				<div className="position_rt2 addl_top_mrgn">
+
+					<input className="emailtext formtext" ref="signemailText" type="text" placeholder="Email" />
+					<input className="passwordtext formtext" ref="signpasswordText" type="password" placeholder="Password" />
+					<input className="confirmpasswordtext formtext" ref="confirmpasswordText" type="text" placeholder="Confirm Password" />
+					<input className="PhoneNumber formtext" ref="PhoneNumber" type="text" placeholder="Phone Number" />
+					<button className="btsignup btn" type="submit">SIGN UP</button>
+
+				</div>	
+
+
 			</form>
 			</div>
+
+		</div>
+
+</div>
+
 		);
 	},
 	SignUpSubmitted: function(e) {

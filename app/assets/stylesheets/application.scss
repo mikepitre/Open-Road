@@ -95,14 +95,13 @@
 body {
 	font-size: 62.5%; 
 	font-family: "fira-sans-2", Trebuchet, sans-serif; 
-	background-color: #2b2323;
-
+	background-color: #9a0600;
 }	
+
 
 img {
 	// max-width: 100%;
 }
-
 
 .welcome {
   font-family: "fira-sans-2", Trebuchet, sans-serif;
@@ -118,24 +117,24 @@ img {
   width: 100%;
 
 }
-
 .background-img {
 	background-image: asset-url("highway_1280adjLg.jpg");
 	background-position: center;
   	background-repeat: no-repeat;
 	background-size: cover;
 	height: 700px;
-	// width: 140%;
 }
 
 h1 {
-	// font-style: normal;
 	color: #feedaf;	
 	font-weight: 600;
-	font-size: 6.5em;
+	font-size: 6.2em;
 	text-align: center;
 	padding-top: 35px;
-	// padding-right: 15%;
+
+.addl_top_mrgn {
+	margin-top: 200px;
+}
 
 }
 .tagline {
@@ -151,7 +150,6 @@ h1 {
 	font-style: italic;
 }
 
-
 .fullwidth {
 	width: 100%;
 	float: right;
@@ -159,38 +157,42 @@ h1 {
 }
 
 
-
-// span {
-// 	color: #ec1312;
-
-// }
-
-// display: flex;
-// justify-content: center;
-// align-items: center;
-
 .formtext {	
 	display: block;
 	font-family: "fira-sans-2";
 	font-weight: 600;
 	font-size: 2.6em;
 	text-align: left;
-	// width: 60%;
 	background-color: rgba(83, 75, 70, .7);
 	padding-top: 10px;
 	padding-bottom: 10px;
 	padding-left: 20px;
 	border: 0;
-	// margin-left: 20%;
-	// margin-right: 20%;
 	margin-bottom: 10px;
-	// float: right;
 	color: white;
-	width:335px;
-	// margin-left: 20px;	
-
+	width: 300px;
+	margin-left: 40px;	
 }
-.btnlogin {
+
+
+.formtext_map {	
+	display: block;
+	font-family: "fira-sans-2";
+	font-weight: 600;
+	font-size: 2.6em;
+	text-align: left;
+	background-color: rgba(83, 75, 70, .7);
+	padding-top: 10px;
+	padding-bottom: 10px;
+	padding-left: 20px;
+	border: 0;
+	margin-bottom: 10px;
+	color: white;
+	width: 300px;
+	margin-left: 100px;	
+}
+
+.btn {
 	display: block;
 	margin-top: 10px;
 	border-radius: 30px;
@@ -200,37 +202,48 @@ h1 {
 	width: 60px;
 	height: 60px;
 	font-family: "fira-sans-2";
-	font-size: 1.7em;
+	font-size: 1.6em;
 	color: #fefbe6;
-	// margin:
-	// margin-left: 20%;
-	// margin-right: 45%;
 	line-height: 1.1;
 	padding-top: 7px;
 	float: right;
 }
 
-.position_rt {
+.position_rt1 {
 	float: right;
 }
+
+.position_rt2 {
+	float: right;
+	padding-top: 145px;
+}
+
+.position_3 {
+	float: right;
+	padding-top: 35px;
+}
+
 
 .not_member {
 	color: #f2ecd4;	
 	font-weight: 600;
 	font-size: 2.4em;
 	height: 35px;
-	// background-color: rgba(83, 75, 70, .8);
-	// padding-top: 35px;
-	// margin: 40px 23% 0 5%;
 	padding-left: 10px;
 	line-height: 1.5;
 	font-style: italic;
 	text-align: left;
-	// margin-bottom: 10px;
 	float: right;
-	// clear: all;
 	margin-top: 20px;
 }
+
+.googlemap {
+	width: 60%;
+	margin-top: 100px;
+	margin: 0 auto;
+	height: 30%;
+}
+
 
 // .formgroup {
 // 	width:100%;

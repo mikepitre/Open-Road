@@ -7,25 +7,24 @@ var LogInComponent = React.createClass({
 
 		<div className="main">
 
-				
-
-				<h1> Open <span>Road</span> </h1>
+				<h1> Open Road </h1>
 
 				<p className="tagline"> The shortest time
 					between you and there </p>
 
-			<div className="position_rt">
+			<div className="position_rt1">
 
 				<form className="formgroup" onSubmit={this.LogInSubmitted}>
 
 					<input className="emailtext formtext" ref="emailText" type="text" placeholder="Email" />
 					<input className="passwordtext formtext" ref="passwordText" type="password" placeholder="Password" />
 
-				</form>
+		
 
-					<div className="fullwidth">
-					<button className="btnlogin" type="submit">LOG IN </button>
-					</div>
+			<div className="fullwidth">
+
+					<button className="btnlogin btn" type="submit">LOG IN </button>
+			</div>
 
 					<div className="float-rt"> 
 
@@ -34,13 +33,13 @@ var LogInComponent = React.createClass({
 						</div>
 
 						<div className="fullwidth">
-						<button onClick={this.SignUp} className="btnsignup btnlogin" type="button">SIGN UP</button>
+						<button onClick={this.SignUp} className="btnsignup btn" type="button">SIGN UP</button>
+
+						</div>
+
 					</div>
-				</div>
-
-				</div>
-
-				
+					</form>
+			</div>
 
 		</div>
 			
