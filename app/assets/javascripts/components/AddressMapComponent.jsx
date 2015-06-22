@@ -68,7 +68,7 @@
 		function CheckTime(){
 			calculateDistances(CurrentLocation, DesiredLocation,function(e){
 				var duration = e.rows[0].elements[0].duration.value
-				if (duration>LatestTime*60){
+				if (duration<LatestTime*60){
 
 					$.post('/trips/notify',function(){
             alert('Time to go!')
